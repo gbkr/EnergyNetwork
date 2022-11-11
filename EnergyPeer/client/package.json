@@ -1,0 +1,64 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@mui/icons-material": "^5.3.1",
+    "@mui/lab": "^5.0.0-alpha.66",
+    "@mui/material": "^5.3.1",
+    "@mui/styled-engine-sc": "^5.3.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "@types/jest": "^26.0.24",
+    "@types/node": "^12.20.24",
+    "@types/react": "^17.0.20",
+    "@types/react-dom": "^17.0.9",
+    "@types/recharts": "^1.8.23",
+    "@types/styled-components": "^5.1.21",
+    "apexcharts": "^3.33.0",
+    "axios": "^0.21.4",
+    "dayjs": "^1.10.7",
+    "energylib": "link:../../EnergyLib",
+    "react": "^17.0.2",
+    "react-apexcharts": "^1.3.9",
+    "react-dom": "^17.0.2",
+    "react-force-graph-2d": "^1.23.8",
+    "react-query": "^3.33.7",
+    "react-scripts": "4.0.3",
+    "recharts": "^2.1.8",
+    "styled-components": "^5.3.3",
+    "styles": "link:@types/@mui/styles",
+    "typescript": "^4.4.3",
+    "web-vitals": "^1.1.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "resolutions": {
+    "bezier-js": "4.0.3"
+  }
+}

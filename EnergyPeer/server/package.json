@@ -1,0 +1,52 @@
+{
+  "name": "energy-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node ./src/index.ts",
+    "dev": "ts-node-dev --respawn ./src/index.ts",
+    "test": "jest",
+    "cy:open": "pnpm exec cypress open",
+    "cy:run": "pnpm exec cypress run",
+    "dev5": "concurrently \"pnpm dev\" \"/bin/sleep 1 && pnpm dev -- --port 8001\" \"/bin/sleep 2 && pnpm dev -- --port 8002\" \"/bin/sleep 3 && pnpm dev -- --port 8003\" \"/bin/sleep 4 && pnpm dev -- --port 8004\"",
+    "dev12": "concurrently \"pnpm dev\" \"/bin/sleep 1 && pnpm dev -- --port 8001\" \"/bin/sleep 2 && pnpm dev -- --port 8002\" \"/bin/sleep 3 && pnpm dev -- --port 8003\" \"/bin/sleep 4 && pnpm dev -- --port 8004\" \"/bin/sleep 5 && pnpm dev -- --port 8005\" \"/bin/sleep 6 && pnpm dev -- --port 8006\" \"/bin/sleep 7 && pnpm dev -- --port 8007\" \"/bin/sleep 8 && pnpm dev -- --port 8008\" \"/bin/sleep 9 && pnpm dev -- --port 8009\" \"/bin/sleep 10 && pnpm dev -- --port 8010\" \"/bin/sleep 11 && pnpm dev -- --port 8011\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/crypto-js": "^4.0.2",
+    "@types/elliptic": "^6.4.13",
+    "@types/json-stable-stringify": "^1.0.33",
+    "@types/uuid": "^8.3.4",
+    "@types/yargs": "^17.0.2",
+    "axios": "^0.21.1",
+    "axios-retry": "^3.2.0",
+    "concurrently": "^7.5.0",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^10.0.0",
+    "eciesjs": "^0.3.12",
+    "elliptic": "^6.5.4",
+    "energylib": "link:../../EnergyLib",
+    "express": "^4.17.1",
+    "json-stable-stringify": "^1.0.1",
+    "uuid": "^8.3.2",
+    "yargs": "^17.1.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/preset-typescript": "^7.15.0",
+    "@types/express": "^4.17.13",
+    "@types/jest": "^26.0.24",
+    "@types/node": "^16.4.12",
+    "cypress": "^9.5.3",
+    "jest": "^27.0.6",
+    "ts-jest": "^27.0.4",
+    "ts-node": "^10.1.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.3.5"
+  }
+}
